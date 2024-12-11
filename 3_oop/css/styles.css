@@ -1,0 +1,75 @@
+:root {
+    --colorMain: black;
+    --colorSecondary: white;
+
+    --colorBgHeader: rgb(39, 53, 74);
+    --colorBgLogo: rgb(234, 80, 71);
+
+    --fontMain: Arial, Helvetica, sans-serif;
+    --fontHeader: 'Arial Narrow', Arial, Helvetica, sans-serif;
+
+    --imgWidth: 100px;
+    --imgHeight: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontMain);    
+}
+
+header {
+    display: flex;
+    color: var(--colorSecondary);
+    font-family: Tahoma, sans-serif;
+    font-weight: normal;
+}
+.logo {
+    padding: 0.5rem;
+    background-color: var(--colorBgLogo);
+}
+.logo > img {
+    width: var(--imgWidth);
+    height: var(--imgHeight);
+}
+.header {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    background-color: var(--colorBgHeader);
+    padding: 0.5rem 0.25rem 0.25rem 1rem;
+}
+main {
+    margin-bottom: 3rem;
+}
+form { 
+    border: thin solid var(--colorMain); 
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin: 0.5rem;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--colorSecondary);
+    background-color: var(--colorBgHeader);
+    padding: 0.25rem;
+}
+
+p {
+    margin: 0;
+}
+
+/* Bootstrap elements */
+.modal-header {
+    color: var(--colorSecondary);
+    background-color: var(--colorBgHeader);
+}
+#modalMovies {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
